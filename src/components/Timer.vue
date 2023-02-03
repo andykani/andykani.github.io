@@ -120,7 +120,7 @@ export default {
 <template>
     <div class="">
         <div class="border shadow-sm border-gray-100 py-4 px-2 rounded-sm flex justify-evenly items-center">
-            <div :key="index" v-for="({label, value}, index) in formatedItems"  class="flex flex-col border sm:mx-2 sm:w-[3rem] md:w-[4.5rem] border-slate-400 sm:p-2 md:p-3 rounded-sm">
+            <div :key="index" v-for="({label, value}, index) in formatedItems"  class="flex flex-col items-center justify-center py-3 border sm:mx-2 sm:w-[3rem] md:w-[4.5rem] border-slate-400 rounded-sm">
                 <span class=" md:text-lg font-[600] ">{{ checkNumberDigits(value) }} </span>
                 <span class="sm:text-[6px] md:text-[9px] uppercase block mt-2">{{ label }} </span>
             </div>
